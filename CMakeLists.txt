@@ -1,21 +1,15 @@
 
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.12)
+project(CMakeSkeletonFramework LANGUAGES CXX)
 
-project(CMakeSkeleton)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-include_directories(inc)
+enable_testing()
 
-file(GLOB_RECURSE HEADER "inc/*.hpp" "inc/*.h")
-file(GLOB_RECURSE SOURCE "src/*.cpp" "src/*.c")
+add_subdirectory(prj)
+add_subdirectory(test)
 
-set(CMAKE_CXX_FLAGS '-g')
-# set(CMAKE_CXX_STANDARD 20)
-# set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(${PROJECT_NAME} ${SOURCE} ${HEADER})
 
-source_group("Header include" FILES ${HEADER})
-source_group("Source src"     FILES ${SOURCE})
-
-# link libraries
-# target_link_libraries(${PROJECT_NAME} -lpthread -lboost_system -lssl -lcrypto -lrt)

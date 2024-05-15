@@ -2,7 +2,7 @@
 #ifndef __DUMMY_H__
 #define __DUMMY_H__
 
-bool dummy();
+bool DummyPrj();
 
 #endif // __DUMMY_H__
 

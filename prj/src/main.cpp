@@ -1,11 +1,11 @@
 
-#include "dummy.h"
+#include "DummyLib.h"
+#include "DummyPrj.h"
 #include <iostream>
 
 
 int main(int /*argc*/, const char * /*argv*/[])
 {
-    std::cout << "Hello  " << dummy() << std::endl;
-
+    std::cout << "Hello  " << DummyPrj() << DummyLib() << std::endl;
     return 0;
 }

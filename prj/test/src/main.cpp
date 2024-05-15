@@ -1,13 +1,13 @@
 
 
-#include "dummy.h"
+#include "DummyPrj.h"
 
 #include <gtest/gtest.h>
 
 
 TEST(DummyTest, DummyTest)
 {
-    EXPECT_TRUE(dummy());
+    EXPECT_TRUE(DummyPrj());
 }
 
 

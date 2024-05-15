@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Launch",
+            "name": "Launch PRJ",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bin/CMakeSkeleton",
+            "program": "${workspaceFolder}/bin/CMakeSkeletonPrj",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -30,10 +30,35 @@
             ]
         },
         {
-            "name": "Test : (gdb) Launch",
+            "name": "Launch Test PRJ",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bin/CMakeSkeleton_test",
+            "program": "${workspaceFolder}/bin/CMakeSkeletonPrj_test",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "CMake: build",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Launch Test Lib",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/CMakeSkeletonLib_test",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

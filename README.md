@@ -1,13 +1,10 @@
 # CMakeSkeleton
 
-A primitive CMake project with GTest integrated to start a new project from scratch.
+A primitive and sample CMake project which owns a library and an executable with each a test module.
 
 ### Preparation:
 
-* Rename the "CMakeSkeleton" folder to your "ProjectName". 
-* Replace the "CMakeSkeleton" text with "ProjectName" in the CMakeLists.txt files. Such as 
-      * CMakeSkeletonFrame -> ProjectNameFrame
-      * CMakeSkeleton -> ProjectName
-      * CMakeSkeleton_test -> ProjectName_test
+* Rename the "CMakeSkeleton" folder to your "ProjectName".
+* Search and replace the "CMakeSkeleton" text with "ProjectName".
 
 

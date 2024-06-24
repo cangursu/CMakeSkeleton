@@ -20,6 +20,7 @@ set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
 # set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(${PROJECT_NAME} ${SOURCE} ${HEADER})
+set_property(TARGET ${PROJECT_NAME} PROPERTY OUTPUT_NAME CMakeSkeleton)
 
 # source_group("Header include" FILES ${HEADER})
 # source_group("Source src"     FILES ${SOURCE})
@@ -29,7 +30,7 @@ target_include_directories(${PROJECT_NAME}
                     PRIVATE  "inc"
                     PUBLIC "${CMakeSkeletonLib}/inc")
 # target_link_libraries(${PROJECT_NAME} -lpthread -lboost_system -lssl -lcrypto -lrt)
-target_link_libraries(${PROJECT_NAME} CMakeSkeletonLib)
+target_link_libraries(${PROJECT_NAME} CMakeSkeleton)
 
 install(TARGETS ${PROJECT_NAME}
     LIBRARY       DESTINATION ${CMAKE_INSTALL_LIBDIR}

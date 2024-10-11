@@ -8,7 +8,7 @@
             "name": "Launch PRJ",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bin/CMakeSkeletonPrj",
+            "program": "${workspaceFolder}/bin/CMakeSkeleton",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
